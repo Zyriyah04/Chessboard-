@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: rgb(255, 168, 168); 
+}
+
+h1 {
+    color: black;
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    gap: 0;
+    margin: 20px auto;
+    width: 480px;
+    height: 480px;
+}
+
+.tile {
+    width: 60px;
+    height: 60px;
+}
+
+.tile.black {
+    background-color: black;
+}
+
+.tile.pink {
+    background-color: lightpink;
+}
+
+.piece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: rgb(221, 17, 51);
+}
+
+.selected {
+    outline: 2px solid red;
+}
